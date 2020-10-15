@@ -12,9 +12,9 @@
         else{
             
         }
-        document.getElementById("h").innerHTML = hours+':';
-        document.getElementById("m").innerHTML = a.getMinutes()+':';
-        document.getElementById("s").innerHTML = a.getSeconds()+day;
+        document.getElementById("hours").innerHTML =("0"+ hours).slice(-2)+':';
+        document.getElementById("minutes").innerHTML = ("0"+ a.getMinutes()).slice(-2)+':';
+        document.getElementById("seconds").innerHTML = ("0"+ a.getSeconds()).slice(-2)+"&nbsp;"+day;
 
 
     }
@@ -29,9 +29,9 @@
 <div >
 <ul style="float:right; ">
     <li>Your Current Time &nbsp;</li>
-    <li id='h'></li>
-    <li id = 'm'></li>
-    <li id ='s'></li>
+    <li id='hours'></li>
+    <li id = 'minutes'></li>
+    <li id ='seconds'></li>
 </ul>
 
 
