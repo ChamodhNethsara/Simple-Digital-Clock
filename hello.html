@@ -1,0 +1,38 @@
+<script>
+    
+    function newfunc() {
+        
+        a = new Date();
+        day ="AM"
+        hours = a.getHours();
+        if (hours > 12){
+            hours = hours -12;
+            day = 'PM'
+        }
+        else{
+            
+        }
+        document.getElementById("h").innerHTML = hours+':';
+        document.getElementById("m").innerHTML = a.getMinutes()+':';
+        document.getElementById("s").innerHTML = a.getSeconds()+day;
+
+
+    }
+    setInterval(newfunc,1000);
+</script>
+<style>
+    li {
+        display: inline-block;
+        font-size: xx-large;
+    }
+</style>
+<div >
+<ul style="float:right; ">
+    <li>Your Current Time &nbsp;</li>
+    <li id='h'></li>
+    <li id = 'm'></li>
+    <li id ='s'></li>
+</ul>
+
+
+</div>
