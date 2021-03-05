@@ -1,6 +1,9 @@
-<style>
-    li {
-        display: inline-block;
+li {
+	display: inline-block;
         font-size: xx-large;
     }
-</style>
+   
+ul {
+	float: right;
+	}
+
